@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name="URL" value="https://demowebshop.tricentis.com/"></parameter>
+<parameter name="chrome_key" value="webdriver.chrome.driver"></parameter>
+<parameter name="chrome_value" value="./software/chromedriver.exe"></parameter>
+<parameter name="time" value="5"></parameter>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.demoshop.testscript.RegisterModule"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
